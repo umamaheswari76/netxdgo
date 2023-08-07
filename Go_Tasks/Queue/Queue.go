@@ -2,66 +2,66 @@ package main
 
 import "fmt"
 
-var front *node = nil
-var rear *node = nil
-
-type node struct{
-	data int
-	next *node
+type Node struct{
+	Data int
+	Next *Node
 }
 
-func create(element int) *node{
-	// n := node{element,nil}
+var Front *Node = nil
+var Rear *Node = nil
+
+func Create(element int) *Node{
+	// n := Node{element,nil}
 	// temp_ptr = &n
-	n := new(node)
-	n.data = element
-	n.next = nil
+	n := new(Node)
+	n.Data = element
+	n.Next = nil
 	return n
 }
 
-func add(element int){
+func Add(element int){
 	
-	if front==nil{
-		temp := create(element)
-		front = temp
-		rear = temp
+	if Front==nil{
+		temp := Create(element)
+		Front = temp
+		Rear = temp
 		// fmt.Println(front.data)
 		// fmt.Println(rear)
 
 	}else{
 		// fmt.Println("not nil")
-		temp := create(element)
-		rear.next = temp
-		rear = temp
+		temp := Create(element)
+		Rear.Next = temp
+		Rear = temp
 		// fmt.Println(rear)
 
 	}
 }
 
-func print_queue(){
-	for i:=front; i!=nil; {
+func Print_queue(){
+	for i:=Front; i!=nil; {
 		temp := i
-		fmt.Println(temp.data)
-		i = temp.next
+		fmt.Println(temp.Data)
+		i = temp.Next
 	}
 }
 
-func delete() {
-	temp := front
-	front = temp.next
+func Delete() {
+	temp := Front
+	Front = temp.Next
 	temp = nil
 
 }
 
 func main(){
-	add(1)
-	add(2)
-	add(3)
-	add(4)
-	add(5)
-	delete()
-	delete()
-	add(6)
-	print_queue()
+	Add(1)
+	Add(2)
+	Add(3)
+	Add(4)
+	Add(5)
+	Delete()
+	Delete()
+	Add(6)
+	Print_queue()
 
 }
