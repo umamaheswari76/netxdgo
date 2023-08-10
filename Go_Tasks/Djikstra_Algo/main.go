@@ -1,6 +1,7 @@
 package main
 
 
+
 import (
     "fmt"
     "math")
@@ -12,7 +13,7 @@ var n int = 4
 func print(dist[n] int){
     fmt.Println("Shortest distance from source")
     for i:=0; i<n;i++{
-        fmt.Println(string(i+65),"\t",dist[i])
+        fmt.Println(i,"\t",dist[i])
     }
 }
 func min_index(dist []int, sptset []bool) int{
@@ -55,16 +56,12 @@ func dijkstra(graph [][]int, src int){
    
 }
 
-
-
-
 func main(){
-    var graph = [4][4]int { {0,5,8,0},
-        {5,0,9,2},
-        {8,9,0,6},
-        {0,2,6,0},}
-    var src int
+	var graph = [4][4] int {{0,5,8,0},
+	{5,0,9,2},
+	{8,9,0,6},
+	{0,2,6,0}}
     fmt.Scanln(&src)
-    dijikstra(graph, src)
+    dijkstra(graph, src)
 }
 
