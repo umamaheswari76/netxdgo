@@ -43,7 +43,6 @@ func djikstra(graph [4][4]int, src int){
         element := min_index(dist,sptset)
         sptset[element] = true
 
-
         for con_ind:=0; con_ind<n; con_ind++{
             if (!sptset[con_ind] && graph[element][con_ind]!=0 && dist[element] != math.MaxInt && (dist[element]+graph[element][con_ind]) <dist[con_ind]){
                 dist[con_ind] = dist[element]+graph[element][con_ind]
