@@ -17,6 +17,7 @@ func main(){
 	// c=3 error
 
 	//dec 4
+	// := walrus operator
 	d := 4
 	fmt.Println("d is ",d)
 

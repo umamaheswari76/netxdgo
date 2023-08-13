@@ -2,24 +2,9 @@ package main
 
 import "fmt"
 
-//data types 
-//	numeric - int, float, complex, rune, byte
-//		int8, int16, int32, int64
-//		uint8, uint16, uint32, uint64
-//	bool
-//	string
  func main(){
 	 var a int8 =122
 	// //var b int8 =500 //throws error as overflow...int8 --only store 8 bits(128)
-	// 	// uint8 ->  0  to  255
-	// 	// uint16 ->  0  to  65535
-	// 	// uint32 ->  0  to  4294967295
-	// 	// uint64 ->  0  to  18446744073709551615
-
-	// 	// int8 ->  -128  to  127
-	// 	// int16 ->  -32768  to  32767
-	// 	// int32 ->  -2147483648  to  2147483647
-	// 	// int64 ->  -9223372036854775808  to  9223372036854775807
 
 	fmt.Println("a is ",a)
 	// //fmt.Println("b is ",b)
