@@ -28,8 +28,8 @@ $project  -> it passes along the documents with only specified fields,
 
 go through - have examples for all
 
-$match
-$group   
+$match  -> used to retrieve the documents that match the secified condition
+$group  ->
 $sort
 $project
 
