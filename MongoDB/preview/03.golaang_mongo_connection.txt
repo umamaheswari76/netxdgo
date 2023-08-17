@@ -1,2 +1,18 @@
 https://github.com/mongodb/mongo-go-driver
 
+
+Data connectivity and retrieval
+
+step 1
+    model  ->  we should create a model with us, which is used to create instance for updating and retrieving
+    main -> writing the query 
+    connected to the service package
+
+    service -> the implementation of the query is done
+            ->  we have to config the DB and collection(implementation done in config)
+    
+    config -> the implementation for configuring the DB and collection were done
+           -> it will return the db and collection reference
+           -> for configuring, we need the connectionstring(URI)
+    
+    costant -> connectionstring is declared

@@ -1,7 +1,7 @@
 package config
 
 import (
-	"fmt"
+	//"fmt"
 	"log"
 	"MongoDb/constants"
 	"context"
@@ -25,13 +25,8 @@ func ConnectDataBase() (*mongo.Client, error){
 	return mongoClient,nil
 }
 
-
+//connecte instance of client,db,coll
 func GetCollection(client *mongo.Client,dbName string, collectionName string) *mongo.Collection{
-	client,err := ConnectDataBase()
-	if err != nil{
-		fmt.Println(err)
-		panic(err)
-	}
 	collection := client.Database(dbName).Collection(collectionName)
 	return collection
 }
