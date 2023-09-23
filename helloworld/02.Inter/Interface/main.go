@@ -4,6 +4,9 @@ import (
 	"fmt"
 	"math"
 )
+
+//refer this link
+//https://www.bogotobogo.com/GoLang/GoLang_Interfaces.php
 type Shape interface{
 	Area() float64
 	Peri() float64

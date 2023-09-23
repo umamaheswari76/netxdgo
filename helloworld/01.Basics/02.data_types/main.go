@@ -2,13 +2,13 @@ package main
 
 import "fmt"
 
- func main(){
-	 var a int8 =122
-	// //var b int8 =500 //throws error as overflow...int8 --only store 8 bits(128)
+//  func main(){
+// 	 var a int8 =122
+// 	// //var b int8 =500 //throws error as overflow...int8 --only store 8 bits(128)
 
-	fmt.Println("a is ",a)
-	// //fmt.Println("b is ",b)
-}
+// 	fmt.Println("a is ",a)
+// 	// //fmt.Println("b is ",b)
+// }
 
 
 // func main() {
@@ -38,3 +38,10 @@ import "fmt"
 //     fmt.Println("int64 -> ", min_int64, " to ", max_int64)
 // }
 
+
+
+func main(){
+	var a complex64 = 3+2i
+
+	fmt.Println(real(a)," ",imag(a))
+}
