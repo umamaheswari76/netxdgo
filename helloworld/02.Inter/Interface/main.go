@@ -14,7 +14,6 @@ type Shape interface{
 type Shape2 interface{
 	Shape
 	Additional()
-
 }
 
 type Circle struct{
@@ -61,3 +60,4 @@ func main(){
 }
 
 // db.createUser({	user: "netxd",pwd: "netxd",roles:[{role: "userAdmin" , db:"netxd"}]})
+
